@@ -1,0 +1,167 @@
+▶ Parsing command line ...
+
+▶ Detecting Docker platform
+Detected Docker platform is linux/amd64
+
+▶ Initializing Docker Compose ...
+
+▶ Setting up error handling ...
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 292B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/debian:bookworm-slim
+#2 DONE 16.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/2] FROM docker.io/library/debian:bookworm-slim@sha256:302ff7cde82ce20eb79ee3d8685a9e3e3a683cae5f86851e821153223cca7def
+#4 resolve docker.io/library/debian:bookworm-slim@sha256:302ff7cde82ce20eb79ee3d8685a9e3e3a683cae5f86851e821153223cca7def 0.0s done
+#4 sha256:6abae0db1e5b2b2e5ebe2fd9d56dc300b4c95df3c3715b420ce1bdb63e429f28 1.46kB / 1.46kB done
+#4 sha256:3c957ba9d394e5ad217b9094bf72ae9964a312b4be5ea6fde08d2adcf7554151 0B / 31.88MB 0.1s
+#4 sha256:302ff7cde82ce20eb79ee3d8685a9e3e3a683cae5f86851e821153223cca7def 1.85kB / 1.85kB done
+#4 sha256:e4699bbf9229fd14a848864ec4eb400582f7bf8127a874df6b43e019230b6a3a 529B / 529B done
+#4 sha256:3c957ba9d394e5ad217b9094bf72ae9964a312b4be5ea6fde08d2adcf7554151 2.10MB / 31.88MB 0.5s
+#4 sha256:3c957ba9d394e5ad217b9094bf72ae9964a312b4be5ea6fde08d2adcf7554151 8.39MB / 31.88MB 0.6s
+#4 sha256:3c957ba9d394e5ad217b9094bf72ae9964a312b4be5ea6fde08d2adcf7554151 15.73MB / 31.88MB 0.8s
+#4 sha256:3c957ba9d394e5ad217b9094bf72ae9964a312b4be5ea6fde08d2adcf7554151 18.87MB / 31.88MB 1.0s
+#4 sha256:3c957ba9d394e5ad217b9094bf72ae9964a312b4be5ea6fde08d2adcf7554151 20.97MB / 31.88MB 1.2s
+#4 sha256:3c957ba9d394e5ad217b9094bf72ae9964a312b4be5ea6fde08d2adcf7554151 23.07MB / 31.88MB 1.3s
+#4 sha256:3c957ba9d394e5ad217b9094bf72ae9964a312b4be5ea6fde08d2adcf7554151 25.17MB / 31.88MB 1.5s
+#4 sha256:3c957ba9d394e5ad217b9094bf72ae9964a312b4be5ea6fde08d2adcf7554151 27.26MB / 31.88MB 1.7s
+#4 sha256:3c957ba9d394e5ad217b9094bf72ae9964a312b4be5ea6fde08d2adcf7554151 30.41MB / 31.88MB 1.9s
+#4 extracting sha256:3c957ba9d394e5ad217b9094bf72ae9964a312b4be5ea6fde08d2adcf7554151
+#4 sha256:3c957ba9d394e5ad217b9094bf72ae9964a312b4be5ea6fde08d2adcf7554151 31.88MB / 31.88MB 2.1s done
+#4 extracting sha256:3c957ba9d394e5ad217b9094bf72ae9964a312b4be5ea6fde08d2adcf7554151 1.8s done
+#4 DONE 4.0s
+
+#5 [2/2] RUN set -x   && apt-get update   && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends jq   && apt-get clean   && rm -rf /var/lib/apt/lists/*
+#5 0.394 + apt-get update
+#5 3.560 Get:1 http://security.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+#5 4.022 Get:2 http://deb.debian.org/debian bookworm InRelease [151 kB]
+#5 4.242 Get:3 http://security.debian.org/debian-security bookworm-security/main amd64 Packages [170 kB]
+#5 17.16 Get:4 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+#5 20.11 Get:5 http://deb.debian.org/debian bookworm/main amd64 Packages [8788 kB]
+#5 44.13 Get:6 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [13.8 kB]
+#5 45.06 Fetched 9226 kB in 44s (210 kB/s)
+#5 45.06 Reading package lists...
+#5 45.72 + DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends jq
+#5 45.75 Reading package lists...
+#5 46.38 Building dependency tree...
+#5 46.56 Reading state information...
+#5 46.79 The following additional packages will be installed:
+#5 46.79   libjq1 libonig5
+#5 46.87 The following NEW packages will be installed:
+#5 46.87   jq libjq1 libonig5
+#5 48.42 0 upgraded, 3 newly installed, 0 to remove and 94 not upgraded.
+#5 48.42 Need to get 388 kB of archives.
+#5 48.42 After this operation, 1165 kB of additional disk space will be used.
+#5 48.42 Get:1 http://deb.debian.org/debian bookworm/main amd64 libonig5 amd64 6.9.8-1 [188 kB]
+#5 52.78 Get:2 http://deb.debian.org/debian bookworm/main amd64 libjq1 amd64 1.6-2.1 [135 kB]
+#5 66.42 Get:3 http://deb.debian.org/debian bookworm/main amd64 jq amd64 1.6-2.1 [64.9 kB]
+#5 93.76 debconf: delaying package configuration, since apt-utils is not installed
+#5 93.80 Fetched 388 kB in 47s (8315 B/s)
+#5 93.84 Selecting previously unselected package libonig5:amd64.
+#5 93.84 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6674 files and directories currently installed.)
+#5 93.93 Preparing to unpack .../libonig5_6.9.8-1_amd64.deb ...
+#5 93.94 Unpacking libonig5:amd64 (6.9.8-1) ...
+#5 94.00 Selecting previously unselected package libjq1:amd64.
+#5 94.00 Preparing to unpack .../libjq1_1.6-2.1_amd64.deb ...
+#5 94.00 Unpacking libjq1:amd64 (1.6-2.1) ...
+#5 94.05 Selecting previously unselected package jq.
+#5 94.05 Preparing to unpack .../archives/jq_1.6-2.1_amd64.deb ...
+#5 94.05 Unpacking jq (1.6-2.1) ...
+#5 94.10 Setting up libonig5:amd64 (6.9.8-1) ...
+#5 94.11 Setting up libjq1:amd64 (1.6-2.1) ...
+#5 94.12 Setting up jq (1.6-2.1) ...
+#5 94.13 Processing triggers for libc-bin (2.33-1) ...
+#5 94.26 + apt-get clean
+#5 94.27 + rm -rf /var/lib/apt/lists/auxfiles /var/lib/apt/lists/deb.debian.org_debian_dists_bookworm-updates_InRelease /var/lib/apt/lists/deb.debian.org_debian_dists_bookworm-updates_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/deb.debian.org_debian_dists_bookworm_InRelease /var/lib/apt/lists/deb.debian.org_debian_dists_bookworm_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/lock /var/lib/apt/lists/partial /var/lib/apt/lists/security.debian.org_debian-security_dists_bookworm-security_InRelease /var/lib/apt/lists/security.debian.org_debian-security_dists_bookworm-security_main_binary-amd64_Packages.lz4
+#5 DONE 94.3s
+
+#6 exporting to image
+#6 exporting layers
+#6 exporting layers 0.1s done
+#6 writing image sha256:76085945b72b86a5cf2e77fe18847eef16fd97a35cf95044a1ea17afc40bd7a6 0.0s done
+#6 naming to docker.io/library/sentry-self-hosted-jq-local done
+#6 DONE 0.1s
+
+Hey, so ... we would love to automatically find out about issues with your
+Sentry instance so that we can improve the product. Turns out there is an app
+for that, called Sentry. Would you be willing to let us automatically send data
+about your instance upstream to Sentry for development and debugging purposes?
+
+  y / yes / 1
+  n / no / 0
+
+(Btw, we send this to our own self-hosted Sentry instance, not to Sentry SaaS,
+so that we can be in this together.)
+
+Here's the info we may collect:
+
+  - OS username
+  - IP address
+  - install log
+  - runtime errors
+  - performance data
+
+Thirty (30) day retention. No marketing. Privacy policy at sentry.io/privacy.
+
+y or n? 
+Thank you. To avoid this prompt in the future, use one of these flags:
+
+  --report-self-hosted-issues
+  --no-report-self-hosted-issues
+
+or set the REPORT_SELF_HOSTED_ISSUES environment variable:
+
+  REPORT_SELF_HOSTED_ISSUES=1 to send data
+  REPORT_SELF_HOSTED_ISSUES=0 to not send data
+
+latest: Pulling from getsentry/sentry-cli
+a0d0a0d46f8b: Pulling fs layer
+3417a9a82fd3: Pulling fs layer
+1bc2b14fea4d: Pulling fs layer
+be921d53e6b3: Pulling fs layer
+f8b6ef178e1d: Pulling fs layer
+be921d53e6b3: Waiting
+f8b6ef178e1d: Waiting
+3417a9a82fd3: Verifying Checksum
+3417a9a82fd3: Download complete
+a0d0a0d46f8b: Verifying Checksum
+a0d0a0d46f8b: Download complete
+1bc2b14fea4d: Verifying Checksum
+1bc2b14fea4d: Download complete
+a0d0a0d46f8b: Pull complete
+3417a9a82fd3: Pull complete
+be921d53e6b3: Verifying Checksum
+be921d53e6b3: Download complete
+1bc2b14fea4d: Pull complete
+be921d53e6b3: Pull complete
+f8b6ef178e1d: Verifying Checksum
+f8b6ef178e1d: Download complete
+f8b6ef178e1d: Pull complete
+Digest: sha256:3737154530b1b390950dd8b58421f2697812ea07dc1a902702781d9c2554bd29
+Status: Downloaded newer image for getsentry/sentry-cli:latest
+docker.io/getsentry/sentry-cli:latest
+
+▶ Checking for latest commit ... 
+skipped
+
+▶ Checking minimum requirements ...
+Found Docker version 27.1.2
+Found Docker Compose version 2.29.1
+Unable to find image 'busybox:latest' locally
+latest: Pulling from library/busybox
+5cc84ad355aa: Pulling fs layer
+5cc84ad355aa: Verifying Checksum
+5cc84ad355aa: Download complete
+5cc84ad355aa: Pull complete
+Digest: sha256:5acba83a746c7608ed544dc1533b87c737a0b0fb730301639a0179f9344b1678
+Status: Downloaded newer image for busybox:latest
+WARN: Recommended minimum CPU cores available to Docker is 4, found 2
+FAIL: Required minimum RAM available to Docker is 3800 MB, found 1673 MB

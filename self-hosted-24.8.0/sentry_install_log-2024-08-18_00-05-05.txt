@@ -1,0 +1,26 @@
+▶ Parsing command line ...
+
+▶ Detecting Docker platform
+Detected Docker platform is linux/amd64
+
+▶ Initializing Docker Compose ...
+
+▶ Setting up error handling ...
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 292B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/debian:bookworm-slim
+#2 ERROR: failed to copy: httpReadSeeker: failed open: server message: insufficient_scope: authorization failed
+------
+ > [internal] load metadata for docker.io/library/debian:bookworm-slim:
+------
+Dockerfile:1
+--------------------
+   1 | >>> FROM debian:bookworm-slim
+   2 |     
+   3 |     LABEL MAINTAINER="oss@sentry.io"
+--------------------
+ERROR: failed to solve: debian:bookworm-slim: failed to resolve source metadata for docker.io/library/debian:bookworm-slim: failed to copy: httpReadSeeker: failed open: server message: insufficient_scope: authorization failed

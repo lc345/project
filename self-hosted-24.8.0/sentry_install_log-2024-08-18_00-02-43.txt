@@ -1,0 +1,26 @@
+▶ Parsing command line ...
+
+▶ Detecting Docker platform
+Detected Docker platform is linux/amd64
+
+▶ Initializing Docker Compose ...
+
+▶ Setting up error handling ...
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 292B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/debian:bookworm-slim
+#2 ERROR: failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/47/4735ff618e63fa90d91e11a6cd0ea73bcfe3859924de33076eaff2630a1f0232/data?verify=1723913565-RthpbEUyD2i7fPiCiuDwykMGFts%3D": dial tcp 154.83.15.20:443: i/o timeout
+------
+ > [internal] load metadata for docker.io/library/debian:bookworm-slim:
+------
+Dockerfile:1
+--------------------
+   1 | >>> FROM debian:bookworm-slim
+   2 |     
+   3 |     LABEL MAINTAINER="oss@sentry.io"
+--------------------
+ERROR: failed to solve: DeadlineExceeded: DeadlineExceeded: DeadlineExceeded: debian:bookworm-slim: failed to resolve source metadata for docker.io/library/debian:bookworm-slim: failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/47/4735ff618e63fa90d91e11a6cd0ea73bcfe3859924de33076eaff2630a1f0232/data?verify=1723913565-RthpbEUyD2i7fPiCiuDwykMGFts%3D": dial tcp 154.83.15.20:443: i/o timeout
