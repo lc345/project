@@ -1,0 +1,16 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if monitor_list %}
+    <ul>
+    {% for monitor in monitor_list %}
+        <li> <a href="/monitor/{{ monitor.id }}/" style="color:blue">{{ monitor.monitor_type }}</a> </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No jobs are available.</p>
+{% endif %}
+
+{% endblock %}
